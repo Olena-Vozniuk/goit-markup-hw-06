@@ -690,6 +690,8 @@ margin-bottom: 4px;
  border-radius: 2px;
  cursor: pointer;
  margin-right: 7px;
+
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-own-checkbox-icon{
@@ -747,6 +749,92 @@ position: absolute;
 
 .modal-form-policy{
   color: rgba(33, 150, 243, 1);
+}
+
+/* footer form */
+
+.footer-form{
+  margin-left: auto;
+}
+
+.footer-form-wrapper{
+ display: flex;
+}
+
+.footer-form-txt{
+ font-weight: 700;
+ letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--light-text-color);
+margin-bottom: 10px;
+}
+
+.footer-form-subscribe{
+ width: 358px;
+height: 50px;
+background-color: inherit;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding-left: 12px;
+color: var(--light-text-color);
+outline: none;
+
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.footer-form-subscribe:focus{
+border-color: var(--accent-color);
+}
+
+
+.footer-form-subscribe::placeholder{
+font-size: 16px;
+line-height: 1.25;
+display: flex;
+align-items: center;
+padding-left: 12px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-submit {
+  font-family: inherit;
+  background-color: var(--accent-color);
+  color: var(--light-text-color);
+  cursor: pointer;
+  display: block;
+  margin-left: 12px;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-submit:focus,
+.footer-form-submit:hover  {
+  background-color: var(--btn-focus-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.icon-send{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 115px;
+  transform: translateY(-50%);
+}
+
+.icon-send-wrapper{
+   position: relative;
+   margin-right: 28px;
 }
 
 /* portfolio */
